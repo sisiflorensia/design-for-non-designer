@@ -252,7 +252,7 @@ a:hover {
         min-height: 14vh;
     }
     .logo {
-      font-size: 25px;
+      font-size: 24px;
     }
     .banner {
         margin-top: 40%;
@@ -260,7 +260,7 @@ a:hover {
     .subtitle {
         color: #111111;
         letter-spacing: 0.02em;
-        font-size: 21px;
+        font-size: 19px;
         line-height: 28px;
         font-weight: normal;
     }
