@@ -30,7 +30,11 @@ header {
     letter-spacing: .1em;
     text-decoration: none;
     color: #ffc107;
-    text-decoration: line-through #dc3545;
+    text-decoration-line: line-through;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-color: #dc3545;
+    -webkit-text-decoration-color: #dc3545;
+    /* text-decoration: line-through #dc3545; */
     opacity: .8;
     transition: all 0.7s;
 }
