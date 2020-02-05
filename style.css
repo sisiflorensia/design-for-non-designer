@@ -248,7 +248,7 @@ a:hover {
         min-height: 14vh;
     }
     .logo {
-      font-size: 26px;
+      font-size: 25px;
     }
     .banner {
         margin-top: 40%;
@@ -294,7 +294,7 @@ a:hover {
   animation-iteration-count: infinite;
   animation-name: arrow;
 }
-  
+
 @keyframes arrow {
   0% {
     opacity: 0;
