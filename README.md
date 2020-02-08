@@ -1,6 +1,6 @@
 # [I'M NOT A DESIGNER](https://sisiflorensia.github.io/iamnotadesigner/)
 
-This is non-profit page containing simple guides for developers to a create tasteful web design by themselves.
+This is a non-profit interactive page containing simple guides for developers to a create tasteful web design by themselves.
 Contact me if you want to contribute to this page or simply to give me a constructive feedback!
 
 ## User Flow (Placeholder)
