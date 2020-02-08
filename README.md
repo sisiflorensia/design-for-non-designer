@@ -3,10 +3,17 @@
 This is non-profit page containing simple guides for developers to a create tasteful web design by themselves.
 Contact me if you want to contribute to this page or simply to give me a constructive feedback!
 
+## User Flow (Placeholder)
+
 ## [DB Schema](https://kitt.lewagon.com/db/3180)
 ![IA](db_schema.png)
 
-## Content Planning
+## Tools & Programming Languages
+- HTML/CSS with vanilla Bootstrap
+- JQuery <- might be replaced with vanilla JS soon
+- Incoming: Ruby on Rails <- will be migrated soon
+
+## Content Planning (What else to add?)
 ### Typography
 - Trending typefaces
 - Fonts pairings
