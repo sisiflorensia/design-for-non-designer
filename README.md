@@ -3,15 +3,21 @@
 This is a non-profit interactive page containing simple guides for developers to a create tasteful web design by themselves.
 Contact me if you want to contribute to this page or simply to give me a constructive feedback!
 
+## Target Audience
+- Full-stack & back-end developers
+- Newbies to web design
+- Curious minds
+
 ## User Flow (In Progress)
 
 ## [DB Schema](https://kitt.lewagon.com/db/3180)
-![IA](db_schema.png)
+![DB schema for iamnotadesigner website](db_schema.png)
 
 ## Tools & Programming Languages
-- HTML/CSS with vanilla Bootstrap
+- HTML/CSS with vanilla Bootstrap <- temporary layout [here](https://sisiflorensia.github.io/iamnotadesigner/)
 - JQuery <- might be replaced with vanilla JS soon
 - Incoming: Ruby on Rails <- will be migrated soon
+- Heroku as a host <- will need to be migrated once it moves to RoR
 
 ## Content Planning (What else to add?)
 ### Typography
@@ -42,9 +48,5 @@ Contact me if you want to contribute to this page or simply to give me a constru
 - Web pages
 - Instagram
 - References
+### In-house Blogs
 
-## Audience
-- Full-stack & back-end developers
-- Newbie to web design
-- Curious minds
-<br>
