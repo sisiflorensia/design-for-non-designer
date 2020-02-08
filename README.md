@@ -8,7 +8,8 @@ Contact me if you want to contribute to this page or simply to give me a constru
 - Newbies to web design
 - Curious minds
 
-## User Flow (In Progress)
+## [User Flow](https://whimsical.com/9gsxwdi5jTNZg8fGdKiBTY#LUSUr8hW5mhmxzDD7F)
+![User flow for release 1 & 2](user_flow.png)
 
 ## [DB Schema](https://kitt.lewagon.com/db/3180)
 ![DB schema for iamnotadesigner website](db_schema.png)
