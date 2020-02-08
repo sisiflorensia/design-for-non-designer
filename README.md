@@ -2,7 +2,10 @@
 
 This is non-profit page containing simple guides for developers to a create tasteful web design by themselves.
 
-## Contents
+## [DB Schema](https://kitt.lewagon.com/db/3180)
+![IA](db_schema.png)
+
+## Content Planning
 ### Typography
 - Trending typefaces
 - Fonts pairings
