@@ -1,6 +1,7 @@
 # [I'M NOT A DESIGNER](https://sisiflorensia.github.io/iamnotadesigner/)
 
 This is non-profit page containing simple guides for developers to a create tasteful web design by themselves.
+Contact me if you want to contribute to this page or simply to give me a constructive feedback!
 
 ## [DB Schema](https://kitt.lewagon.com/db/3180)
 ![IA](db_schema.png)
