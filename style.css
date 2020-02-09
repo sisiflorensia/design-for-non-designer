@@ -19,16 +19,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* header  */
 
-header {
+.front-page {
     /* min-height: 28vh; */
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(180deg, rgba(255,255,255,.1) 0%, rgba(255, 255, 255,0.2) 100%), url('images/banner.svg') no-repeat;
     background-size: 80vh;
     background-position: right 10% bottom 30%;
 }
-
-.progress {
-    height: 100vh;
+.in-progress {
+    /* min-height: 28vh; */
+    min-height: 100vh;
     background: linear-gradient(180deg, rgba(255,255,255,.1) 0%, rgba(255, 255, 255,0.2) 100%), url('images/in_progress.svg') no-repeat;
     background-size: 80vh;
     background-position: right 10% bottom 30%;
@@ -296,13 +296,13 @@ a:hover {
 
 /* responsiveness  */
 @media (max-width: 1024px) {
-    header {
+    .front-page {
         background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.2) 80%), url('images/banner.svg') no-repeat;
         background-size: 50vh;
         background-position: right 30% bottom 30%;
     }
-    .progress {
-        background: linear-gradient(180deg, rgba(255,255,255,.1) 0%, rgba(255, 255, 255,0.2) 100%), url('images/in_progress.svg') no-repeat;
+    .in-progress {
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%,rgba(255, 255, 255,.2) 100%), url('images/in_progress.svg') no-repeat;
         background-size: 50vh;
         background-position: right 30% bottom 30%;
     }
@@ -315,13 +315,13 @@ a:hover {
     }
 }
 @media (max-width: 768px) {
-    header {
+    .front-page {
         background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.2) 80%), url('images/banner.svg') no-repeat;
         background-size: 50vh;
         background-position: right 30% bottom 24%;
     }
-    .progress {
-        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.2) 80%), url('images/in_progress.svg') no-repeat;
+    .in-progress {
+        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.2) 80%), url('images/in-progress.svg') no-repeat;
         background-size: 50vh;
         background-position: right 30% bottom 24%;
     }
@@ -335,13 +335,13 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-    header {
+    .front-page {
         background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.8) 80%), url('images/banner.svg') no-repeat;
         background-size: 60vh;
         background-position: right 10% bottom 24%;
     }
-    .progress {
-        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.8) 80%), url('images/in_progress.svg') no-repeat;
+    .in-progress {
+        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.8) 80%), url('images/banner.svg') no-repeat;
         background-size: 60vh;
         background-position: right 10% bottom 24%;
     }
@@ -375,6 +375,9 @@ a:hover {
         line-height: 28px;
         font-weight: normal;
         letter-spacing: 0.02em;
+    }
+    .small-paragraph {
+        color: #808080 !important; 
     }
 }
 /* ------------------------------------------------------------------ */
