@@ -80,19 +80,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 .highlight {
-    color: #808080;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, rgba(255,193,7,.4) 65%);
-    display: inline;
-    /* opacity: 0.9; */
-    text-decoration: none;
-    transition: all 0.7s;
-}
-.highlight:hover {
     color: #BF9677;
     background: linear-gradient(180deg, rgba(255,255,255,0) 65%, rgba(15, 163, 177, .1) 65%);
     display: inline;
     text-decoration: none;
-    /* transform: translateY(-2px); */
+    transition: all 0.7s;
+    /* margin: auto; */
+}
+.highlight:hover {
+    color: #808080;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, rgba(255,193,7,.6) 65%);
+    display: inline;
+    text-decoration: none;
 }
 /* ----------------------------------------------------------- */
 
@@ -321,7 +320,7 @@ a:hover {
         background-position: right 30% bottom 24%;
     }
     .in-progress {
-        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.2) 80%), url('images/in-progress.svg') no-repeat;
+        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.2) 80%), url('images/in_progress.svg') no-repeat;
         background-size: 50vh;
         background-position: right 30% bottom 24%;
     }
@@ -341,7 +340,7 @@ a:hover {
         background-position: right 10% bottom 24%;
     }
     .in-progress {
-        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.8) 80%), url('images/banner.svg') no-repeat;
+        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.8) 80%), url('images/in_progress.svg') no-repeat;
         background-size: 60vh;
         background-position: right 10% bottom 24%;
     }
@@ -357,7 +356,7 @@ a:hover {
     }
     .subtitle {
         color: #111111;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.02em + 2px;
         font-size: 19px;
         line-height: 28px;
         font-weight: normal;
@@ -374,7 +373,7 @@ a:hover {
         font-size: 16px;
         line-height: 28px;
         font-weight: normal;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.02em + 1px;
     }
     .small-paragraph {
         color: #808080 !important; 
