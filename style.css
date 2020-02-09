@@ -20,7 +20,18 @@ h1, h2, h3, h4, h5, h6 {
 /* header  */
 
 header {
-    min-height: 28vh;
+    /* min-height: 28vh; */
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(255,255,255,.1) 0%, rgba(255, 255, 255,0.2) 100%), url('images/banner.svg') no-repeat;
+    background-size: 80vh;
+    background-position: right 10% bottom 30%;
+}
+
+.progress {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(255,255,255,.1) 0%, rgba(255, 255, 255,0.2) 100%), url('images/in_progress.svg') no-repeat;
+    background-size: 80vh;
+    background-position: right 10% bottom 30%;
 }
 
 .logo {
@@ -56,11 +67,48 @@ header {
     line-height: 40px;
     font-weight: normal;
 }
+.subtitle-blue {
+    color: #0FA3B1;
+    font-size: 27px;
+    line-height: 40px;
+    font-weight: normal;
+}
+.subtitle-progress {
+    color: #808080;
+    font-size: 21px;
+    line-height: 40px;
+    font-weight: normal;
+}
+.highlight {
+    color: #808080;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, rgba(255,193,7,.4) 65%);
+    display: inline;
+    /* opacity: 0.9; */
+    text-decoration: none;
+    transition: all 0.7s;
+}
+.highlight:hover {
+    color: #BF9677;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, rgba(15, 163, 177, .1) 65%);
+    display: inline;
+    text-decoration: none;
+    /* transform: translateY(-2px); */
+}
 /* ----------------------------------------------------------- */
 
 /* banner  */
 .banner {
-    margin-top: 15%;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%,0);
+    width: 73%;
+}
+/* .banner-content {
+    margin-top: 40%;
+}
+.banner-heading {
+    margin-top: 15%; */
 }
 
 .screen-fit {
@@ -140,7 +188,7 @@ header {
 .btn-up {
     display: none;
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
+    bottom: 30px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -151,17 +199,17 @@ header {
     height: 48px;
     border-radius: 50% ;
     /* opacity: 0.1; */
-    color: #0FA3B1;
+    color: #ffc107;
     font-size: 24px;
     box-shadow: 1px 3px 5px #80808028;
-    opacity: 0.8;
+    /* opacity: 0.9; */
     /* padding: 2px; */
     transition: all 0.3s ease;
 }
 
 .btn-up:hover {
-    opacity: .9;
-    border: solid 1px #0FA3B1;
+    /* opacity: 1; */
+    /* border: solid 1px #ffc107; */
     transform: translateY(-2px);
 }
 
@@ -247,15 +295,65 @@ a:hover {
 /* ------------------------------------------------------------------ */
 
 /* responsiveness  */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     header {
-        min-height: 14vh;
+        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.2) 80%), url('images/banner.svg') no-repeat;
+        background-size: 50vh;
+        background-position: right 30% bottom 30%;
+    }
+    .progress {
+        background: linear-gradient(180deg, rgba(255,255,255,.1) 0%, rgba(255, 255, 255,0.2) 100%), url('images/in_progress.svg') no-repeat;
+        background-size: 50vh;
+        background-position: right 30% bottom 30%;
+    }
+    .banner {
+        position: absolute;
+        top: 14%;
+        left: 35%;
+        transform: translate(-50%,0);
+        width: 60%;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.2) 80%), url('images/banner.svg') no-repeat;
+        background-size: 50vh;
+        background-position: right 30% bottom 24%;
+    }
+    .progress {
+        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.2) 80%), url('images/in_progress.svg') no-repeat;
+        background-size: 50vh;
+        background-position: right 30% bottom 24%;
+    }
+    .banner {
+        position: absolute;
+        top: 14%;
+        left: 36%;
+        transform: translate(-50%,0);
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.8) 80%), url('images/banner.svg') no-repeat;
+        background-size: 60vh;
+        background-position: right 10% bottom 24%;
+    }
+    .progress {
+        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255, 255, 255,.8) 80%), url('images/in_progress.svg') no-repeat;
+        background-size: 60vh;
+        background-position: right 10% bottom 24%;
+    }
+    .banner {
+        position: absolute;
+        top: 14%;
+        left: 41%;
+        transform: translate(-50%,0);
+        width: 71%;
     }
     .logo {
       font-size: 24px;
-    }
-    .banner {
-        margin-top: 40%;
     }
     .subtitle {
         color: #111111;
@@ -263,6 +361,20 @@ a:hover {
         font-size: 19px;
         line-height: 28px;
         font-weight: normal;
+    }
+    .subtitle-blue {
+        color: #0FA3B1;
+        font-size: 21px;
+        line-height: 28px;
+        font-weight: normal;
+        letter-spacing: 4px;
+    }
+    .subtitle-progress {
+        color: #808080;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: normal;
+        letter-spacing: 0.02em;
     }
 }
 /* ------------------------------------------------------------------ */
@@ -281,8 +393,8 @@ a:hover {
   -webkit-transform: rotate(225deg);
   border-left: none;
   border-top: none;
-  border-right: 2px #0FA3B1 solid;
-  border-bottom: 2px #0FA3B1 solid;
+  border-right: 2px #ffc107 solid;
+  border-bottom: 2px #ffc107 solid;
 }
 .arrow:before {
   content: '';
@@ -292,8 +404,8 @@ a:hover {
   margin: -10px 0 0 -10px;
   border-left: none;
   border-top: none;
-  border-right: 1px #0FA3B1 solid;
-  border-bottom: 1px #0FA3B1 solid;
+  border-right: 1px #ffc107 solid;
+  border-bottom: 1px #ffc107 solid;
   animation-duration: 1.2s;
   animation-iteration-count: infinite;
   animation-name: arrow;
@@ -326,7 +438,7 @@ a:hover {
     }
     100% {
         transform: translateY(0px) ;
-        opacity: 0.8;
+        opacity: 1;
     }
 }
 
