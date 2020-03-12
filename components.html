@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Basic SEO -->
+      <!-- favicon -->
+      <link rel="title icon" href="images/favicon.png">
+    <title>I'M NOT A DESIGNER</title>
+    <meta name="description" content="Simple UI/UX design guide for web app developers. From a non-designer to other non-designers .">
+    <!-- Vanilla Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Responsive Font Size (RFS) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300|Roboto:300|Incosolata:400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f5e55803f2.js" crossorigin="anonymous"></script>
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css ">
+  </head>
+  <body>
+
+    <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-xl fixed-top nav-menu">
+        <a class="navbar-brand logo ml-md-4 ml-0" href="index.html">IM:ADESIGNER</a>
+        <!-- <a class="navbar-brand logo-small d-md-none d-block ml-md-4 ml-0" href="index.html"><del>IM:ADESIGNER</del></a> -->
+        <button type="button" class="navbar-toggler nav-button" data-toggle="collapse"
+        data-target="#mynavbar">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mr-md-4 ml-0" id="mynavbar">
+        <ul class="navbar-nav pb-2">
+            <li class="nav-item"><a class="nav-link menu-item" href="./in_progress.html">Typography</a></li>
+            <li class="nav-item"><a class="nav-link menu-item" href="./in_progress.html">Colors</a></li>
+            <li class="nav-item"><a class="nav-link menu-item" href="./in_progress.html">UI Library</a></li>
+            <li class="nav-item"><a class="nav-link menu-item" href="./in_progress.html">UX Tools</a></li>
+            <li class="nav-item"><a class="nav-link menu-item" href="./in_progress.html">Resources</a></li>
+        </ul>
+        </div>
+      </nav>
+      <!-- End of navbar -->
+
+      <!-- banner -->
+      <!-- <div class="text-md-right text-center banner">
+        <div class="col-xl-6 col-md-9 col-sm-12 banner-heading text-left">
+          <h3 class="mt-5 mb-3">
+            <div class="subtitle">
+              You don't talk 'designer'? Neither do we! Design your own tasteful page directly from paper to your text editor.
+            </div> -->
+            <!-- <div class="subtitle my-3">
+              <a class="highlight" href="./in_progress.html">Find out more</a>
+            </div> -->
+          <!-- </h3>
+          <p class="mb-5 small-paragraph">Made by coders for other coders</p>
+        </div>
+      </div> -->
+      <!-- end of banner -->
+    </header>
+
+    <div class="container-fluid component-page p-md-5 p-4">
+      <!-- Portfolio -->
+      <div class="row">
+        <div class="col-12 px-3 py-3 mt-5 mb-5">
+          <ul class="list-inline px-3 text-secondary text-lg-left text-center pb-2">
+            <li class="list-inline-item gallery-list-item px-0 mx-0 gallery-item-active" data-filter="all">All<span class="separator px-2 mx-2">|</span></li>
+            <li class="list-inline-item gallery-list-item px-0 mx-0" data-filter="button">Button<span class="separator px-2 mx-2">|</span></li>
+            <li class="list-inline-item gallery-list-item px-0 mx-0" data-filter="card">Card<span class="separator px-2 mx-2">|</span></li>
+            <li class="list-inline-item gallery-list-item px-0 mx-0" data-filter="form">Form<span class="separator px-2 mx-2">|</span></li>
+            <li class="list-inline-item gallery-list-item px-0 mx-0" data-filter="navbar">Navbar</li>
+            <span class="separator px-2 mx-2">|</span></li>
+            <li class="list-inline-item gallery-list-item px-0 mx-0" data-filter="others">Others</li>
+          </ul>
+          <div class="container-fluid my-4">
+            <div class="row justify-content-between">
+              <div class="description col-xl-4 col-lg-6 col-md-12 mt-3 mb-4 filter button">
+                <div class="card-container bg-light p-3">
+                  <h4 class="title text-center mb-4">Glowing gradient button</h4>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <a class="button-gradient1" href="www.google.com">Hover me</a>
+                  </div>
+                </div>
+              </div>
+              <div class="description col-xl-4 col-lg-5 col-md-12 mt-3 mb-4 filter button">
+                <div class="card-container bg-light p-3">
+                  <h4 class="title mb-4 text-center">Neon light button</h4>
+                  <div class="text-center black-bg m-3">
+                    <a class="button-neon1 btn-green" href="#">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      Hover here
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="description col-xl-4 col-lg-5 col-md-12 mt-3 mb-4 filter form">
+                <div class="card-container bg-light p-3">
+                  <h4 class="title text-center mb-4">Line form</h4>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <form action="#" id="search-form">
+                      <input type="text" id="search-bar" class="mx-3" placeholder="Search something">
+                      <input type="submit" class="btn btn-outline-info">
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="description col-xl-4 col-lg-5 col-md-12 mt-3 mb-4 filter button">
+                <div class="card-container bg-light p-3">
+                  <h4 class="title text-center mb-4">Ripple Effect Button</h4>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <a href="index.html" class="buttn ripple">Something</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of portfolio -->
+      <div class="row justify-content-end">
+        <div class="btn-up bg-light text-center fixed-right">
+          <div class="arrow"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid px-5 footer">
+      <div class="col-12 text-md-right text-center p-md-5 py-5 px-0">
+        <h4 class="display-6 footer-title font-weight-light mb-3">Stay connected</h4>
+        <div class="py-3">
+          <a href="https://www.facebook.com/sisi.florensia"><i class="fab fa-facebook-square fa-2x text-light ml-2 socmed"></i></a>
+          <a href="https://github.com/sisiflorensia"><i class="fab fa-github fa-2x text-light ml-2 socmed"></i></a>
+          <a href="https://www.linkedin.com/in/sisiflorensia"><i class="fab fa-linkedin-in fa-2x text-light ml-2 socmed"></i></a>
+          <a href="https://www.instagram.com/lalunatech/"><i class="fab fa-instagram fa-2x text-light ml-2 socmed"></i></a>
+        </div>
+        <p class="text-light font-weight-light">@lalunatech by Sisi Florensia</p>
+      </div>
+    </div>
+    <!-- end of footer -->
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
