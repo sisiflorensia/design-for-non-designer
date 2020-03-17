@@ -700,11 +700,11 @@ Play with margins, width and color to modify the alignments */
     color: white;
     background: #00A8B7 radial-gradient(circle, transparent 1%, #00A8B7 1%) center/15000%;
   }
-  .ripple:active {
+  /* .ripple:active {
     background-color: #008089;
     background-size: 100%;
     transition: background 0s;
-  }
+  } */
   
   /* Button style */
   .buttn {
