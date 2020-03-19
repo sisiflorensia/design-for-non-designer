@@ -1,3 +1,4 @@
+// jQuery codes 
 $(document).ready(function() {
     $('.nav-button').click(function() {
         $('.nav-button').toggleClass('change');
@@ -35,3 +36,11 @@ $(document).ready(function() {
         $(this).addClass('gallery-item-active').siblings().removeClass('gallery-item-active')
     });
 });
+
+// Vanila JS codes 
+let progress = document.getElementById('progress-bar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function() {
+  let progressHeight = (window.pageYOffset / totalHeight) * 100;
+  progress.style.height = progressHeight + "%"
+}

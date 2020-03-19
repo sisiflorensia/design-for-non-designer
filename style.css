@@ -37,10 +37,12 @@ a:hover {
     padding: 1.25em 2.5em;
     color: #808080;
     background-color: #ffffff;
+    z-index: 10;
     transition: all .7s; /* smooth navbar transition on scroll */
 }
 .custom-navbar {
     padding: 0 2.5em;
+    z-index: 10;
     background:linear-gradient(180deg, rgba(248,249,250,1) 80%, rgba(248,249,250,.9)100%);
 }
 
@@ -169,6 +171,61 @@ Play with margins, width and color to modify the alignments */
     text-decoration: none;
 }
 /* ----------------------------------------------------------- */
+
+/* scroll-bar */
+::-webkit-scrollbar {
+    /* width: 0; */
+    display: none;
+}
+#scroll-path {
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#progress-bar {
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 6px;
+    background: linear-gradient(to top, #008aaf, #00ffe7);
+    animation: progress 5s linear infinite;
+}
+@keyframes progress
+{
+    0%, 100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50% 
+    {
+        filter: hue-rotate(360deg);
+    }
+
+}
+#progress-bar:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #008aaf, #00ffe7);
+    filter: blur(10px);
+}
+#progress-bar:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aaf, #00ffe7);
+    filter: blur(30px);
+}
+
 
 /* banner  */
 .banner {
@@ -515,6 +572,7 @@ Play with margins, width and color to modify the alignments */
 .card-container {
     box-sizing: border-box;
     height: 100%;
+    border-radius: 8px;
 }
 .button-gradient1 {
     text-align: center;
@@ -559,6 +617,7 @@ Play with margins, width and color to modify the alignments */
 /* Neon light snake border: https://www.youtube.com/watch?v=3RRgVHd2TXQ */
 .black-bg {
     background-color: #050801;
+    border-radius: 4px;
 }
 .button-neon1 {
     font-family: 'Inconsolata', monospace;
@@ -675,7 +734,7 @@ Play with margins, width and color to modify the alignments */
 
 /* Minimalistic line form */
 #search-bar {
-    width: 60%;
+    width: 70%;
     height: 32px;
     line-height: 32px;
     font-size: 16px;
@@ -700,13 +759,11 @@ Play with margins, width and color to modify the alignments */
     color: white;
     background: #00A8B7 radial-gradient(circle, transparent 1%, #00A8B7 1%) center/15000%;
   }
-  /* .ripple:active {
+  .ripple:active {
     background-color: #008089;
     background-size: 100%;
     transition: background 0s;
-  } */
-  
-  /* Button style */
+  }
   .buttn {
     border: none;
     padding: 12px 24px;
@@ -721,3 +778,130 @@ Play with margins, width and color to modify the alignments */
     outline: none;
     margin: 80px auto;
   }
+
+
+  /* Interactive getting whole button. Tutorial: https://www.youtube.com/watch?v=8NMObsAKDBQ */
+  .button-neon2 {
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 80px 0 100px 0;
+    transition: .5s;
+    overflow: hidden;
+    color: #ffc107;
+}
+.button-neon2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height:10px;
+    border-top: 2px solid #ffc107;
+    border-left: 2px solid #ffc107;
+    transition: .2s ease;
+}
+.button-neon2:hover:before {
+    width: 100%;
+    height: 100%;
+}
+.button-neon2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height:10px;
+    border-bottom: 2px solid #ffc107;
+    border-right: 2px solid #ffc107;
+    transition: .2s ease;
+}
+.button-neon2:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+.button-neon2:hover {
+    color: #ffc107;
+}
+
+
+ /* Interactive getting whole NEON button. Tutorial: https://www.youtube.com/watch?v=8NMObsAKDBQ */
+ .button-neon3 {
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 80px 0 100px 0;
+    transition: .5s;
+    overflow: hidden;
+    color: #ff1fec;
+}
+.button-neon3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height:10px;
+    border-top: 2px solid #ff1fec;
+    border-left: 2px solid #ff1fec;
+    transition: .2s ease;
+}
+.button-neon3:hover:before {
+    width: 100%;
+    height: 100%;
+}
+.button-neon3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height:10px;
+    border-bottom: 2px solid #ff1fec;
+    border-right: 2px solid #ff1fec;
+    transition: .2s ease;
+}
+.button-neon3:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+.button-neon3:hover {
+    color: #111;
+    background-color: #ff1fec;
+    box-shadow: 0 0 50px #ff1fec;
+    transition-delay: .2s;
+}
+
+
+/* Overlapping text */
+.overlap-text-cont {
+    position: relative;
+}
+.background-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    opacity: 0.1;
+    text-transform: uppercase;
+}
+
+.foreground-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    position: absolute;
+    color: #ffc107;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

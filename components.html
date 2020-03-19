@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="style.css ">
   </head>
   <body>
+    <div id="progress-bar"></div>
+    <div id="scroll-path"></div>
 
     <header>
       <!-- navbar -->
@@ -75,7 +77,7 @@
             <li class="list-inline-item gallery-list-item px-0 mx-0" data-filter="others">Others</li>
           </ul>
           <div class="container-fluid my-4">
-            <div class="row justify-content-between">
+            <div class="row justify-content-start">
               <div class="description col-xl-4 col-lg-6 col-md-12 mt-3 mb-4 filter button">
                 <div class="card-container bg-light p-3">
                   <h4 class="title text-center mb-4">Glowing gradient button</h4>
@@ -88,7 +90,7 @@
                 <div class="card-container bg-light p-3">
                   <h4 class="title mb-4 text-center">Neon light button</h4>
                   <div class="text-center black-bg m-3">
-                    <a class="button-neon1 btn-green" href="#">
+                    <a class="button-neon1" href="#">
                       <span></span>
                       <span></span>
                       <span></span>
@@ -104,8 +106,18 @@
                   <div class="d-flex justify-content-center align-items-center">
                     <form action="#" id="search-form">
                       <input type="text" id="search-bar" class="mx-3" placeholder="Search something">
-                      <input type="submit" class="btn btn-outline-info">
+                      <button type="submit" class="btn btn-outline-info">
+                        <i class="fas fa-search"></i>
+                      </button>
                     </form>
+                  </div>
+                </div>
+              </div>
+              <div class="description col-xl-4 col-lg-5 col-md-12 mt-3 mb-4 filter button">
+                <div class="card-container bg-light p-3">
+                  <h4 class="title text-center mb-4">Peeking Corners Button</h4>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <a href="#" class="button-neon2">Hover me</a>
                   </div>
                 </div>
               </div>
@@ -113,7 +125,41 @@
                 <div class="card-container bg-light p-3">
                   <h4 class="title text-center mb-4">Ripple Effect Button</h4>
                   <div class="d-flex justify-content-center align-items-center">
-                    <a href="index.html" class="buttn ripple">Something</a>
+                    <a href="#" class="buttn ripple">Tap me here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="description col-xl-4 col-lg-5 col-md-12 mt-3 mb-4 filter button">
+                <div class="card-container bg-light p-3">
+                  <h4 class="title mb-4 text-center">Neon Corners Button</h4>
+                  <div class="text-center black-bg m-3">
+                    <a class="button-neon3" href="#">
+                      Hover here
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="description col-xl-4 col-lg-5 col-md-12 mt-3 mb-4 filter button">
+                <div class="card-container temp-container bg-light p-3">
+                  <h4 class="title mb-4 text-center">Bubbly Button</h4>
+                  <div class="text-center black-bg m-3">
+                    <a class="button-neon3" href="#">
+                      <span>Hover Me</span>
+                      <span>Hover Me</span>
+                    </a>
+                    <a class="button-neon3" href="#">
+                      <span>Hover Me</span>
+                      <span>Hover Me</span>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+              <div class="description col-xl-4 col-lg-5 col-md-12 mt-3 mb-4 filter others">
+                <div class="card-container bg-light p-3">
+                  <h4 class="title mb-4 text-center">Overlapping Text</h4>
+                  <div class="text-center overlap-text-cont m-3">
+                    <div class="background-text">Welcome</div>
+                    <div class="foreground-text">John</div>
                   </div>
                 </div>
               </div>
@@ -149,6 +195,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-
   </body>
 </html>
