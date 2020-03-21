@@ -952,6 +952,7 @@ Play with margins, width and color to modify the alignments */
                 inset 2px 2px 8px rgba(0, 0, 0, 0.1);
     transform: scale(0.98);
 }
+
 .neumorphism1-label input:checked ~ .fa {
     color: #03e9f4;
     box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
