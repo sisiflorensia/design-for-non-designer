@@ -793,7 +793,7 @@ Play with margins, width and color to modify the alignments */
     margin: 80px 0 100px 0;
     transition: .5s;
     overflow: hidden;
-    color: #ffc107;
+    color: #0FA3B1;
 }
 .button-neon2:before {
     content: '';
@@ -802,8 +802,8 @@ Play with margins, width and color to modify the alignments */
     left: 0;
     width: 10px;
     height:10px;
-    border-top: 2px solid #ffc107;
-    border-left: 2px solid #ffc107;
+    border-top: 2px solid #0FA3B1;
+    border-left: 2px solid #0FA3B1;
     transition: .2s ease;
 }
 .button-neon2:hover:before {
@@ -817,8 +817,8 @@ Play with margins, width and color to modify the alignments */
     right: 0;
     width: 10px;
     height:10px;
-    border-bottom: 2px solid #ffc107;
-    border-right: 2px solid #ffc107;
+    border-bottom: 2px solid #0FA3B1;
+    border-right: 2px solid #0FA3B1;
     transition: .2s ease;
 }
 .button-neon2:hover:after {
@@ -827,7 +827,7 @@ Play with margins, width and color to modify the alignments */
 }
 
 .button-neon2:hover {
-    color: #ffc107;
+    color: #0FA3B1;
 }
 
 
@@ -894,6 +894,7 @@ Play with margins, width and color to modify the alignments */
     font-size: 64px;
     opacity: 0.1;
     text-transform: uppercase;
+    margin: 80px 0 100px 0;
 }
 
 .foreground-text {
@@ -904,4 +905,61 @@ Play with margins, width and color to modify the alignments */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.foreground-text:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+
+/* Neumorphism Radio Button tutorial: https://www.youtube.com/watch?v=sJcAgWkjMt4  */
+.neumorphism1-text {
+    color: #ff1fec;
+    font-size: 24px;
+    margin: 80px 0 20px 0;
+    opacity: 0.8;
+}
+.neumorphism1-label {
+    position: relative;
+    margin: 8px;
+}
+.neumorphism1-label input {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+.neumorphism1-label .fa {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 4px;
+    padding-left: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #5a84a2;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+                -2px -2px 12px rgba(255, 255, 255, 0.5),
+                inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+                2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.neumorphism1-label .fa:hover {
+    box-shadow: inset -1px -1px 6px rgba(255, 255, 255, 1),
+                inset -1px -1px 8px rgba(255, 255, 255, 0.5),
+                inset 2px 2px 4px rgba(255, 255, 255, 0.2),
+                inset 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(0.98);
+}
+
+.neumorphism1-label input:checked ~ .fa {
+    color: #03e9f4;
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+                inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+                inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+                inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+    transform: scale(0.96);
+    text-shadow: 0 0 0.5px #03e9f4,
+                0 0 1px #03e9f4;
 }
